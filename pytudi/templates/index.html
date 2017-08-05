@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+<!-- index.html -->
+{% block title %}PYTUDI{% endblock %}
+
+{% block body %}
+  <div class="container">
+   	<div class="col-xs-8 col-xs-offset-2">
+     		<div class="jumbotron">
+			<div class="starter-template">
+				<strong><span style="color: #0174DF"><h1>PYTUDI</h1></span></strong>
+				<span style="color: #8904B1"><h3>Công cụ tìm kiếm các cặp câu song ngữ Anh - Việt </h3></span>
+			</div>
+     		</div>
+   	</div>  
+
+	<form method="post" action="/search">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<div class="input-group input-group-lg">
+					
+					<input style="color: #B43104" type="text" class="form-control" name="word" placeholder="Nhập từ hoặc cụm từ cần tra" required/>
+					<span class="input-group-btn">
+						<button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-search" ></span></button>
+						
+					</span>
+
+				</div>
+			</div>
+		</div>
+	</form>
+	
+		
+	<div class="col-xs-8 col-xs-offset-2">
+    
+			{% block results %}{% endblock %}
+	    
+	</div>
+	<div class="col-xs-8 col-xs-offset-2">
+		<div class="starter-template">
+			<div class="footer">
+				<p><span style="color: #084B8A">&copy; Copyright by PYTUDI 2017</span></p>
+			</div>
+		</div>
+	</div>
+  </div>
+{% endblock %}
+
