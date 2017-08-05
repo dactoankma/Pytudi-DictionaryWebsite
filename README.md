@@ -1,2 +1,2 @@
-# PYTUDI-DictionaryWebsite
-Công cụ tìm kiếm các cặp câu song ngữ Anh - Việt
+# PYTUDI - DictionaryWebsite
+Công cụ tìm kiếm các cặp câu song ngữ Anh - Việt / Việt - Anh
